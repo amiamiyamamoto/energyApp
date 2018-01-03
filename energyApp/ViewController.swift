@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //UIImageViewを紐付ける
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //保存した画像を読み込む
+    //let image = UIImage(named:"topImg")
+    
+    //画像を表示させる
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
