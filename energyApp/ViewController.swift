@@ -9,27 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-    //UIImageViewを紐付ける
     @IBOutlet weak var imageView: UIImageView!
-    
-    //保存した画像を読み込む
-    //let image = UIImage(named:"topImg")
-    
-    //画像を表示させる
-    
+    //画像インスタンス初期化
+    var image:UIImage!
+    //テキストフィールド
+    @IBOutlet weak var weightField: UITextField!
 
+    //結果を表示させるラベル
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var bottomResultLabel: UILabel!
+    
+    //ボタンが押されたときの処理
+    @IBAction func weightChangeAction(_ sender: Any) {
+        
+        //テキストフィールドの値を取得
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        image = UIImage(named:"test")
+        imageView.image = image
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

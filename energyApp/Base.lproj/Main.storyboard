@@ -69,7 +69,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomResultLabel" destination="EGq-rh-KFZ" id="o0S-tb-tnL"/>
                         <outlet property="imageView" destination="3oq-3o-sTF" id="JWU-ud-ZHk"/>
+                        <outlet property="resultLabel" destination="MA6-Vh-d0h" id="y6t-wW-HwA"/>
+                        <outlet property="weightField" destination="GwM-Pq-Arp" id="KOo-5b-Xlq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
