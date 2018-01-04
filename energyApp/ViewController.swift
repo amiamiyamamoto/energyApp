@@ -22,9 +22,21 @@ class ViewController: UIViewController {
     
     //ボタンが押されたときの処理
     @IBAction func weightChangeAction(_ sender: Any) {
-        
         //テキストフィールドの値を取得
-        
+        if let weight = Int(weightField.text!) {
+            
+            //計算(エネルギー)
+            let energy:Int = weight * 299792458 * 299792458
+            
+            //計算(原発の数)
+            let unclear:Int = energy / (1000000 * 1000 * 3600 * 24 * 365)
+            
+            //ラベルに文字を表示させる
+            resultLabel.text = "\(energy)Jです"
+            bottomResultLabel.text = "原発\(unclear)台が1年に作るエネルギー"
+            
+        }
+
     }
     
     
