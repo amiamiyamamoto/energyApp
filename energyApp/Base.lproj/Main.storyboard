@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたが持ってるエネルギーは…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSs-tX-8oJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたが持ってるエネルギーは…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSs-tX-8oJ">
                                 <rect key="frame" x="68" y="192" width="256" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -74,6 +74,7 @@
                     <connections>
                         <outlet property="bottomResultLabel" destination="EGq-rh-KFZ" id="exL-xu-eDp"/>
                         <outlet property="imageView" destination="3oq-3o-sTF" id="JWU-ud-ZHk"/>
+                        <outlet property="orgLabel" destination="wSs-tX-8oJ" id="EGF-S3-bdy"/>
                         <outlet property="resultLabel" destination="MA6-Vh-d0h" id="y6t-wW-HwA"/>
                         <outlet property="weightField" destination="GwM-Pq-Arp" id="KOo-5b-Xlq"/>
                     </connections>

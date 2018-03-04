@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var weightField: UITextField!
 
     //結果を表示させるラベル
+    @IBOutlet weak var orgLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var bottomResultLabel: UILabel!
     
@@ -24,6 +25,12 @@ class ViewController: UIViewController {
     @IBAction func weightChangeAction(_ sender: Any) {
         //テキストフィールドの値を取得
         if let weight = Int(weightField.text!) {
+            if weight >= 100 {
+                orgLabel.text = "体重おもすぎて計算できない"
+                resultLabel.text = ""
+                bottomResultLabel.text = ""
+                return
+            }
             
             //計算(エネルギー)
             let energy:Int = weight * 299792458 * 299792458
@@ -43,6 +50,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //画像を表示させる
         image = UIImage(named:"test")
         imageView.image = image
     }
