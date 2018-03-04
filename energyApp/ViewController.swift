@@ -39,6 +39,7 @@ class ViewController: UIViewController {
             let unclear:Int = energy / (1000000 * 1000 * 3600 * 24 * 365)
             
             //ラベルに文字を表示させる
+            orgLabel.text = "あなたが持ってるエネルギーは…"
             resultLabel.text = "\(energy)Jです"
             bottomResultLabel.text = "原発\(unclear)台が1年に作るエネルギー"
             
